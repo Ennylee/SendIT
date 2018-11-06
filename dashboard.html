@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compactible" content="ie=edge">
+	<title>SendIT Delivery</title>
+	<link rel="stylesheet" type="text/css" href="./public/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Pacifico|Ubuntu" rel="stylesheet">
+</head>
+<body>
+	
+	<header>
+		<nav class="navbar">
+			<span class="open-slide">
+				<a href="#" onclick="openSideMenu()">
+					<i class="fas fa-bars"></i>
+				</a>
+			</span>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#" class="btn-quote" onclick="openQuoteForm()">Get a Quote</a></li>
+				<li><a href="login.html">Login/Signup</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+			<div class="branding">
+			<h1><span class="highlight">Send</span>IT<span class="highlight">></span>></h1>
+		</div>
+		</nav>
+	</header>
+	
+	<section>		
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+			<a href="index.html">Home</a>
+			<a href="dashboard.html">Dashboard</a>
+			<a href="#">About</a>
+			<a href="#" class="btn-quote" onclick="openQuoteForm()">Get a Quote</a>
+			<a href="#">Contact</a>
+			<a href="login.html">Login/Signup</a>
+			<a href="#">Logout</a>
+		</div>
+	</section>
+
+	<section class="modal-bg">
+		<div id="get_quote" class="get-quote">
+			<a href="#" id="close-quote"class="btn-close" onclick="closeQuoteForm()">&times;</a>
+			<h2>Get an Instant Qoute</h2>
+			<div class="quote-form">
+				<form>
+					<div>
+					<label>Collection State:</label><br>
+					<select>
+						<option>Abia</option>
+						<option>Adamawa</option>
+						<option>Akwa Ibom</option>
+						<option>Anambra</option>
+						<option>Bauchi</option>
+						<option>Bayelsa</option>
+						<option>Benue</option>
+						<option>Borno</option>
+						<option>Cross River</option>
+						<option>Delta</option>
+						<option>Edo</option>
+						<option>Enugu</option>
+						<option>Imo</option>
+						<option>Jigawa</option>
+						<option>Kaduna</option>
+						<option>Kastina</option>
+						<option>Kano</option>
+						<option>Kebbi</option>
+						<option>Kogo</option>
+						<option>Kwara</option>
+						<option>Lagos</option>
+						<option>Niger</option>
+						<option>Ogun</option>
+						<option>Ondo</option>
+						<option>Osun</option>
+						<option>Oyo</option>
+						<option>Plateu</option>
+						<option>Rivers</option>
+						<option>Sokoto</option>
+						<option>Taraba</option>
+						<option>Yobe</option>
+						<option>Gombe</option>
+						<option>Nassarawa</option>
+						<option>Ekiti</option>
+						<option>Ebonyi</option>
+						<option>Bayelsa</option>
+						<option>Zamfara</option>
+						<option>FCT</option>
+					</select>
+					</div>
+
+					<div>
+					<label>Delivery State:</label><br>
+					<select>
+						<option>Abia</option>
+						<option>Adamawa</option>
+						<option>Akwa Ibom</option>
+						<option>Anambra</option>
+						<option>Bauchi</option>
+						<option>Bayelsa</option>
+						<option>Benue</option>
+						<option>Borno</option>
+						<option>Cross River</option>
+						<option>Delta</option>
+						<option>Edo</option>
+						<option>Enugu</option>
+						<option>Imo</option>
+						<option>Jigawa</option>
+						<option>Kaduna</option>
+						<option>Kastina</option>
+						<option>Kano</option>
+						<option>Kebbi</option>
+						<option>Kogo</option>
+						<option>Kwara</option>
+						<option>Lagos</option>
+						<option>Niger</option>
+						<option>Ogun</option>
+						<option>Ondo</option>
+						<option>Osun</option>
+						<option>Oyo</option>
+						<option>Plateu</option>
+						<option>Rivers</option>
+						<option>Sokoto</option>
+						<option>Taraba</option>
+						<option>Yobe</option>
+						<option>Gombe</option>
+						<option>Nassarawa</option>
+						<option>Ekiti</option>
+						<option>Ebonyi</option>
+						<option>Bayelsa</option>
+						<option>Zamfara</option>
+						<option>FCT</option>
+					</select>
+					</div>
+
+					<div>
+					<label>Weight (in Kg):</label><br>
+					<input type="number" name="weight"><br>
+					</div>
+
+					<div>
+					<input class="quote-btn" type="submit" name="submit" value="Get Quote">
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+
+
+		<!-- Main Content -->
+	<main>
+		<div id="main">
+
+			<!-- Dashboard -->
+			<section class="db-heading">
+				<div>
+					<h2>Dashboard</h2>
+					<p>Welcome to your dashboard</p>
+				</div>
+			</section>
+
+			<section class="profile-info">
+				<div class="profile">
+					<h4>Your Profile Info</h4>
+					<ul>
+						<li>Name: </li>
+						<li>Country: </li>
+						<li>Email: </li>
+						<li>Phone: </li>
+					</ul>
+					<a href="#"><i class="fas fa-user-edit"></i></a>
+				</div>
+				<hr>
+				<div class="tracking">
+					<div class="track-icon">
+						<i class="fas fa-map-marked-alt"></i>
+					</div>
+					<h4>Track Your Shipments</h4>
+					<div class="track-form">
+						<label>Percel Tracking Id:</label><br>
+						<input class="track-input" type="text" name="track" placeholder="Tracking Id...">
+						<input class="track-btn" type="submit" name="track_btn" value="Track">
+					</div>
+				</div>
+			</section>
+
+			<!-- Table -->
+			<article>
+				<table align="center">
+					<tr>
+						<td colspan="7"><h3>Your Shipments History:</h3></td>
+					</tr>
+					<tr>
+						<th>Id</th>
+						<th>From</th>
+						<th>To</th>
+						<th>Weight</th>
+						<th>Price</th>
+						<th>Date</th>
+						<th>Status</th>
+						<th>Action</th>
+					</tr>
+					<tr>
+						<td>123</td>
+						<td>Abia</td>
+						<td>Lagos</td>
+						<td>15kg</td>
+						<td>N13,000</td>
+						<td>12/10/2018</td>
+						<td>Delivered</td>
+					</tr>
+					<tr>
+						<td>124</td>
+						<td>Ondo</td>
+						<td>Port Harcourt  <a href="#"><i class="fas fa-edit edit-dest"></i></a></td>
+						<td>7kg</td>
+						<td>N15,000</td>
+						<td>1/10/2018</td>
+						<td>In Route</td>
+						<td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="fas fa-times-circle"></i></a></td>
+					</tr>
+					<tr>
+						<td>123</td>
+						<td>Abia</td>
+						<td>Lagos</td>
+						<td>15kg</td>
+						<td>N20,000</td>
+						<td>12/10/2018</td>
+						<td>Delivered</td>
+					</tr>
+					<tr>
+						<td>124</td>
+						<td>Ondo</td>
+						<td>Port Harcourt  <a href="#"><i class="fas fa-edit edit-dest"></i></a></td>
+						<td>7kg</td>
+						<td>N18,000</td>
+						<td>1/10/2018</td>
+						<td>In Route</td>
+						<td><a href="#"><i class="fas fa-edit"></i></a><a href="#"><i class="fas fa-times-circle"></i></a></td>
+					</tr>
+				</table>
+			</article>
+
+			<section class="partners">
+				<h3>Our Amazing Patners:</h3>
+				<div>
+					<div><img src="./public/images/citysprint.png"></div>
+					<div><img src="./public/images/dhl.png"></div>
+					<div><img src="./public/images/dpd.png"></div>
+					<div><img src="./public/images/parcelforce.png"></div>
+					<div><img src="./public/images/dx.png"></div>
+				</div>
+			</section>
+
+			<!-- Newsletter -->
+			<section class="newsletter">
+				<div>
+					<h3>Subscribe to get Our Newsletter:</h3>
+				</div>
+				<div>
+					<input type="email" name="email" placeholder="Email...">
+				</div>
+			</section>
+
+		</div>
+		<!-- Wrapper Ends -->
+	</main>
+
+			<!-- Footer -->
+			<footer>
+				<section class="footer-widgets">
+					<div class="footer-1">
+						<h3>About Us</h3>
+						<p>
+							SendIt is the leading Percel Delivery company in Nigeria.
+						</p>
+						<p>
+							We get your percel to any destination within Nigeria within some hours from the time of post. Fastness is our culture because we have our customer's urgency at heart.
+						</p>
+					</div>
+					<div class="footer-2">
+						<h3>Help & advice</h3>
+						<a href="#">FAQ</a>
+						<a href="#">Contact Us</a>
+						<a href="#">What you can and can't Send</a>
+						<a href="#">Terms and Conditions</a>
+					</div>
+					<div class="footer-3">
+						<h3>Go Social</h3>
+						<a href="#"><i class="fab fa-github"></i> Github</a>
+						<a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+					</div>
+				</section>
+				<div class="footer-4">
+					<p>Copyright &copy; 2018 SendIT  |  All Rights Reserved.</p>
+				</div>
+			</footer>
+
+		
+	<script src="./public/js/script.js"></script>
+</body>
+</html>
